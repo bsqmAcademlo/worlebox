@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    user-select: none;
+}
+
+.board {
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: grid;
+    gap: 0.5rem;
+}
+
+.board-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.board-col {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.strColor-green {
+    background-color: #43a047;
+}
+
+.strColor-yellow {
+    background-color: #e4a81d;
+}
+
+.strColor-grey {
+    background-color: #757575;
+}
+
+.strColor-null {
+    background-color: #9f9f9f;
+}
+
+.strColor-active {
+    border: 2px solid #1b74e4;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: no-drop;
+}
+
+.btn__active {
+    background-color: #43a047;
+    cursor: pointer;
+}
